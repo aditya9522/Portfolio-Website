@@ -1,0 +1,546 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+.navbar{
+    background-color: #9ccde8;
+    /* opacity: 0.4; */
+    width: 100%;
+    height: 52px;
+    display:flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    /* border-bottom: 4px solid rgb(4, 0, 255); */
+    justify-content: space-between;
+    border-bottom: 2px solid #1a8fa9;
+}
+
+.logo img{
+    margin: 0px 60px;
+    width: 55px;
+}
+
+.draw-menu{
+    display: none;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    margin: 15px 20px;
+}
+
+.draw-menu .line{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #f90505;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+.menu-list{
+    display: block;
+    position: relative;
+    top: 15px;
+    right: 30px;
+}
+
+.menu-list ul{
+    list-style: none;
+    margin-right: 20px;
+} 
+
+.menu-list ul li{
+    display: inline;
+    margin: 0 2px;
+}
+
+.menu-list ul li a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 6px;
+    padding: 4px 12px;
+}
+
+.menu-list ul li a:hover{
+    background: #37a1bc;
+    color: white;
+    transition: 0.8s;                                   /* we add transition for time to chage properties after hovering*/
+}
+
+/* ------------------main sections--------------------- */
+.home{
+    display:flex;
+}
+
+.home-container{
+    display: block;
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 120px 150px;
+    padding-left: 200px;
+}
+
+.home-container h2{
+    color: #0198be;
+    font-size: 40px;
+}
+
+.home-container p{
+    font-size: 20px;
+    color: rgb(11, 96, 115);
+}
+
+.button-portfolio{
+    display: block;
+    position: relative;
+    margin-top: 50px;
+}
+
+.button-portfolio a{
+    background: #81a6ae;
+    border-radius: 5px;
+    padding: 15px 14px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.button-portfolio a:hover{
+    background: #aa1302;
+    box-shadow: 0px 0px 15px 2px  #028baa;
+}
+
+.social {
+    display: inline-block;
+    margin: 50px 0px;
+    position: relative;
+    /* background: #000; */
+    padding: 4px;
+}
+
+.social a img{
+    width: 45px;
+    height: 45px;
+    margin: 0px 8px;
+}
+
+.social a img:hover{
+    border-radius: 22px;
+    transform: scale(0.8);
+    transition: 0.5s;
+    /* border: 4px solid #37a1bc; */
+    box-shadow: 0px 0px 25px 6px #00bbea;   
+}
+
+.picture {
+    display: block;
+    position: relative;
+    background: url('assets/aditya.jpg');
+    width: 340px;
+    height: 450px;
+    top: 15px;
+    margin: 50px 10px ;
+    background-size: cover;
+    border-radius: 70px;
+    box-shadow: 0px 0px 10px 10px white inset;
+    filter: grayscale(10%);
+    opacity: 80%;
+    border: 5px solid rgb(30, 196, 247);
+}
+
+/* about section -------------------------------*/
+.about{
+    display: block;
+    position: relative;
+    
+}
+
+.about h1{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.about-box{
+    width: auto;
+    height: auto;
+    background: rgb(250, 214, 214);
+    box-shadow: 0px 0px 30px 10px rgb(218, 155, 155);
+    border-radius: 10px;
+    margin: 80px 80px;
+}
+
+.about-box h3{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
+.about-box p{
+    padding: 12px;
+    font-size: 17px;
+}
+
+.about-box .button a{
+    background: #a30101;
+    border-radius: 8px;
+    padding: 4px 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.about-box  .button a:hover{
+    background: #1a8fa9;
+    box-shadow: 0px 0px 25px 5px rgb(1, 106, 148);
+}
+
+ /* skills section---------------------------------------- */
+.skills{
+    position: relative;
+    width: auto;
+    height: auto;
+    background: #ffffff;
+    text-align: center;
+}
+ 
+.skills h2{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.imag{
+    display: inline-block;
+    width: 250px;
+    height: 270px;
+    background: #f5dddd;
+    margin: 25px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(205, 161, 161);
+}
+
+.imag h3{
+    background: aliceblue;
+    margin: 20px 0px;
+    border-radius: 5px;
+    color: rgb(0, 77, 145);
+    padding: 6px;
+    width:100%;
+}
+.imag img{
+    /* margin: 0; */
+    /* padding: 0px; */
+    width: 200px;
+    height: 210px;
+    /* object-fit: cover; */
+}
+
+.imag img:hover{
+    opacity: 70%;
+    padding: 20px;
+}
+
+/* projects section------------------------------------------ */
+.projects{
+    display: block;
+    position: relative;
+}
+
+.projects h2{
+    padding: 20px 0px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-box{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 40px 80px;
+    padding: 2px;
+    /* border: 10px rgb(219, 17, 17); */
+    background: #c5c4c4;
+}
+
+.project-box img{
+    width: 250px;
+    height: 150px;
+    float: right;
+    /* padding: 10px; */
+    margin: 20px 50px 0px;
+    box-shadow: 0px 0px 10px 5px rgb(246, 195, 195);
+}
+
+.project-box h3{
+    padding: 5px;
+    background: whitesmoke;
+    text-transform: uppercase;
+}
+
+.project-box p{
+    padding: 10px 10px 125px;
+    background: #f6dede;
+}
+
+.project-box a{
+    display: block;
+    /* clear: both; */
+    padding: 5px;
+    background: rgb(225, 222, 222);
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0px 0px 15px #ff0000;
+    color: rgb(241, 85, 85);
+    width: 100%;
+}
+
+.project-box a:hover{
+    color: rgb(14, 2, 252);
+    text-shadow: 2px 2px 20px #0000ff;
+}
+
+/* contact section------------------------------------- */
+.contact{
+    display: block;
+    position: relative;
+}
+
+.contact h2{
+    padding: 20px 0px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: block;
+    position: relative;
+    top: 20px;
+    margin: 20px 150px;    
+    width: auto;
+    height: auto;
+    background: #f6d9d9;
+    /* border: 3px solid red; */
+    padding: 40px 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 2px red;
+    margin-bottom: 60px;
+}
+
+.container label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container input, textarea{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 8px 15px;
+    font-size: 18px;
+    border: 2px solid gray;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.container button{
+    /* width: auto; */
+    display: block;
+    cursor: pointer;
+    background: #0cb803;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin: 0 auto;
+    border: none;
+}
+
+.container button:hover{
+    box-shadow: 0px 0px 15px 5px rgb(2, 201, 42);
+    color: #0000ff;
+    background: #0cb803;
+}
+
+footer{
+    width: auto;
+    height: auto;
+    background: #1a8fa9;
+    color: white;
+    display: block;
+    position: relative;
+    text-align: center;
+
+}
+
+footer h3{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+footer p{
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+ /* Go to top ------------------------------------ */
+.gotop{
+    display: none;
+    position: fixed;
+    right: 60px;
+    bottom: 30px;
+    font-size: 30px;
+    padding: 5px 15px;
+    color: #d2ecf7;
+    background: #d47979;
+    border-radius: 10px;
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moving{
+    0% {transform: translate(0, 0px);}
+    50% {transform: translate(0, 15px);}
+    100% {transform: translate(0, -0px);}
+}
+
+.gotop:hover{
+    background: #6e6a6a;
+    color: white;
+}
+
+/* ---------------------------------------------------------------------- */
+/* mobile veiw ---------------------------------------------------------- */
+
+@media screen and (max-width:720px){
+    header{
+        font-size: 12px;
+    }
+
+    /* navigationa bar---------------------------------------------------- */
+    .logo img{
+        margin: 0px 30px;
+    }
+
+    .draw-menu{
+        display: block;
+        right: 20px;
+        margin: 15px 0px;
+    }
+
+    .menu-list{
+        display:block;
+        position: relative;
+        width: 65%;
+        top: 52px;                             
+        right: 0px;
+        text-align: center;
+    }
+
+    .menu-list ul{
+        margin-right: 0px;
+    } 
+
+    .menu-list ul li{
+        display: block;
+        background: #9ccde8;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        padding: 30px 0px;
+        border-radius: 6px;
+    }
+
+    .menu-list ul li a{
+        color: rgb(255, 0, 0);
+    }
+
+    .menu-list ul li a:hover{
+        background:none;
+        color: white;
+    }
+
+    .menu-list.hide{
+        top: -480px;
+        transition: top 0.5s;
+    }
+
+    .menu-list.active{
+        display: block;
+        top: 52px;
+    }
+
+    /* home------------------------------------------------- */
+    .home{
+        display: block;
+    }
+
+    .home-container{
+        padding-left: 0px;
+        width: 322px;
+        margin: 120px auto 0px;
+    }
+
+    .picture{
+        top: 0px;
+        margin: 0px auto;
+        margin-bottom: 30px;
+    }
+    
+    /* about -----------------------------*/
+    .about-box{
+        margin: 0px 20px 30px;
+    }
+
+    /* skills------------------------------ */
+    .imag{
+        width: 300px;
+    }
+
+    /* projects----------------------------- */
+    .project-box{
+        margin: 40px;
+    }
+
+    .project-box img{
+        display: block;
+        position: relative;
+        float: none;
+        box-sizing: border-box;
+        margin: 20px auto;
+    }
+
+    .project-box p{
+        padding: 10px 10px;
+    }
+
+    .container{
+        top: 0px;
+        margin: 10px 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    footer h3{
+        font-size: 15px;
+    }
+
+    .gotop{
+        right: 30px;
+        bottom: 30px;
+        font-size: 20px;
+    }
+}
+
